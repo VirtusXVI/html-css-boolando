@@ -17,7 +17,7 @@ ul{
     list-style-type: none;
 }
 li{
-    margin-right: 5px;
+    padding-right: 5px;
 }
 a{
     text-decoration: none;
@@ -49,17 +49,22 @@ header{
     height: 30px;
 }
 .icons span{
-    padding: 0 3px;
+    
 }
 /* MAIN */
 main img{
-    height: 600px;
+    height: 650px;
 }
 .main-flex-container{
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 .main-spacings{
     margin-top: 40px;
+}
+.card-spacings{
+    width: calc(95% / 3);
 }
 .discounted-price{
     color: red;
@@ -98,16 +103,36 @@ main img{
     right: 0px;
     top: 10px;
 }
-.hover-effect:hover{
-    opacity: 0;
-    background-image: url(../img/1b.webp);
-    top: 0;
-    left: 0;
-    z-index: 0;
+.card:hover .second-image{
+    position: absolute;
+    opacity: 1;
 }
 .second-image{
     position: absolute;
     top: 0;
     left: 0;
-    z-index: -1;
+    opacity: 0;
+}
+/* FOOTER */
+footer{
+    margin-top: 40px;
+}
+.footer-flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer-background{
+    background-color: black;
+    color: white;
+}
+.footer-info{
+    display: flex;
+}
+.footer-spacing{
+    padding: 30px 0;
+}
+.social{
+    display: flex;
+    padding: 10px 10px;
 }
