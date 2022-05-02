@@ -8,6 +8,10 @@
     width: 75%;
     margin: 0 auto;
 }
+/* DEBUG */
+.debug-bg{
+    background-color: lightcyan;
+}
 /* COMMON */
 ul{
     list-style-type: none;
@@ -41,9 +45,6 @@ header{
     display: flex;
     font-weight: 700;
 }
-.logo{
-    
-}
 .logo-img{
     height: 30px;
 }
@@ -56,4 +57,57 @@ main img{
 }
 .main-flex-container{
     display: flex;
+}
+.main-spacings{
+    margin-top: 40px;
+}
+.discounted-price{
+    color: red;
+    font-weight: 700;
+}
+.old-price{
+    text-decoration: line-through;
+}
+.card{
+    display: inline-block;
+    position: relative;
+}
+.discount{
+    background-color: red;
+    position: absolute;
+    font-size: 15px;
+    padding: 3px 5px;
+    bottom: 40px;
+    left: 0;
+    color: white;
+}
+.sustainble{
+    background-color: green;
+    position: absolute;
+    font-size: 15px;
+    padding: 3px 5px;
+    bottom: 40px;
+    left: 48px;
+    color: white;
+}
+.favourite{
+    background-color: white;
+    position: absolute;
+    padding: 10px;
+    font-size: 30px;
+    right: 0px;
+    top: 10px;
+}
+.hover-effect:hover{
+    opacity: 0;
+    background-image: url(../img/1b.webp);
+    top: 0;
+    left: 0;
+    z-index: 0;
+}
+.second-image{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
 }
